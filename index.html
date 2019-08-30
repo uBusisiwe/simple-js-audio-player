@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css & js -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/app.js"></script>
+    <title>Podcast Player</title>
+</head>
+
+<body>
+    <main class="app">
+        <div class="app-title">Audio Player</div>
+        <div class="podcast-list">
+
+        </div>
+        <div class="now-playing">
+            <div class="left">
+                <small>Now Playing</small>
+                <p class="audio-name">Track 02</p>
+            </div>
+            <div class="middle">
+                <div class="controls">
+                    <div data-shuffle-button class="shuffle">
+                        <img src="./svg/icons8_shuffle_1.svg" alt="shuffle" class="controls-icon">
+                    </div>
+                    <div data-prev-button class="prev">
+                        <img src="./svg/icons8_skip_to_start.svg" alt="previous" class="controls-icon">
+                    </div>
+                    <div data-play-pause-button class="play-pause">
+                        <img src="./svg/icons8_pause.svg" alt="play" class="controls-icon play-svg">
+                        <!-- <img src="./svg/icons8_play_1.svg" alt="play" class="controls-icon play-svg"> -->
+                    </div>
+                    <div data-next-button class="next">
+                        <img src="./svg/icons8_end.svg" alt="next" class="controls-icon">
+                    </div>
+                    <div data-repeat-button class="loop">
+                        <img src="./svg/icons8_repeat_one.svg" alt="repeat one" class="controls-icon">
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div data-start-time class="start-time">0:00</div>
+                    <div class="moving-line">
+                        <div data-audio-timer class="line"></div>
+                    </div>
+                    <div data-end-time class="end-time">2:20</div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="#" alt="" class="volume-icon">
+                <div class="volume-range"></div>
+            </div>
+        </div>
+    </main>
+    <!-- <audio>
+        <source class="podcast" src="./audio/">
+    </audio> -->
+
+    <template id="audio-template">
+        <div class="audio">
+            <p class="name">Sex and Drugs</p>
+            <audio>
+                <source class="podcast">
+            </audio>
+        </div>
+    </template>
+</body>
+
+</html>
