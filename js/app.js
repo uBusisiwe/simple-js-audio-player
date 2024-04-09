@@ -22,10 +22,8 @@ let songIndex;
 let repeat = 0;
 let playlist = [
     '04 Be Yourself.mp3',
-    '06 Comme Des Garçons.m4a',
-    '06. Not Just Money.mp3',
+    '06 Comme Des Gar',
     'Trevor-Daniel-Empty.mp3',
-    'lonah.mp3',
     '07 Xennons.m4a'
 ];
 
